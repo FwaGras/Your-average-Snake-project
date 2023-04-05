@@ -64,7 +64,7 @@ def computeNextFrame(numFrame,coordonnee, pomme_verte, pomme_rouge):
                 coordonnee[0][1] = 0
 
         # Dessin de la tête du serpent et de noeuds
-        can.create_ovale(coordonnee[0][0], coordonnee[0][1], coordonnee[0][0] + 20, 
+        can.create_oval(coordonnee[0][0], coordonnee[0][1], coordonnee[0][0] + 20, 
                              coordonnee[0][1] + 20, outline='yellow', fill='red')
         
         for n in range(1,len(coordonnee)):
@@ -74,7 +74,7 @@ def computeNextFrame(numFrame,coordonnee, pomme_verte, pomme_rouge):
             else:
                 ligne = 'green'
                 couleur = 'blue'
-            can.create_ovale(coordonnee[n][0], coordonnee[n][1], coordonnee[n][0] + 20, 
+            can.create_oval(coordonnee[n][0], coordonnee[n][1], coordonnee[n][0] + 20, 
                              coordonnee[n][1] + 20, outline= ligne, fill= couleur) 
             
         for p in range(len(pomme_verte)):
